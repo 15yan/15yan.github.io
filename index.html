@@ -2,13 +2,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Web Form</title>
+    <title>YoKo Language Center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js" defer></script>
+
 </head>
 <body>
-    
+    <header>
+        <img src="images/logo9.svg" id="logo">
+        <h2>YoKo Language Center</h2>
+    </header>
     <fieldset>
         <legend><h3>Registration Form</h3></legend>
         <form id="container">
@@ -30,14 +35,14 @@
 
                 <section id="item">
                     <label for="bday">Date of Birth</label>
-                    <input type="date" max="2018-10-15" min="1900-01-01" value="Date of Birth" required>
+                    <input type="date" min="1900-01-01" value="Date of Birth" required>
                     <aside></aside>
 
                 </section>
                    
                 <section id="item">
                     <label for="edate">Enrolled Date</label>
-                    <input type="date" max="2018-10-15" required>
+                    <input type="date" id="edate" required>
                     <aside></aside>
 
 
@@ -79,13 +84,15 @@
             
                 <section id="item">
                     <label for="country" >Country</label>
-                    <select name="country">
+                    <select name="country" >
                             <option value="Select">Select Country</option>
                             <option value="Australia">Australia</option>
                             <option value="New Zealand">New Zealand</option>
                             <option value="Japan">Japan</option>
                             <option value="Spain">Spain</option>
                     </select>
+                    <aside></aside>
+
                 </section>
 
                 <section id="item">
@@ -110,32 +117,35 @@
                 </section>
 
                 <section id="item">
-                    <label for="pwd" >Password: </label>
+                    <label for="pwd" id="pwd">Password: </label>
                     <input type="password" placeholder="  Password" title="Password contains 8-20 characters, at least one uppercase letter, at least one number"  maxlength="20" pattern="" required>
                     <aside></aside>
 
                 </section>
 
                 <section id="item">
-                    <label for="pwd"  >Confirm Password: </label>
+                    <label for="pwd" id="confirmpwd" >Confirm Password: </label>
                     <input type="password" placeholder="  Confirm your password"   title="Please make sure the two passowrds match." pattern="" required>
                     <aside></aside>
     
                 </section>
 
                 <section id="item17">
-                    <input type="checkbox" name="terms" required>
+                    <input type="checkbox" id="checkbox" required>
                     <p> Check here to indicate that you have read and agree to the term of <a href="#">Terms of Services</a> and <a href="#">Privacy of Policy</a>.</p>
                     <aside></aside>
 
                 </section>
 
                 <section id="item14">
-                    <input type="button" value="Create Account and Continue" id="item15">
+                    <input type="button" value="Create Account and Continue" id="item15" disabled>
                     <a href="#" id="item16">Need Help?</a>
                 </section>
             </form>
         </fieldset>
+    <footer>
+        2018 copyright
+    </footer>
    
 </body>
 </html>
