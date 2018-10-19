@@ -2,86 +2,66 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>YoKo Language Center</title>
+    <title>Yán Language Center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/form.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="main.js" defer></script>
+    <script src="js/main.js" defer></script>
 
 </head>
 <body>
     <header>
         <img src="images/logo9.svg" id="logo">
-        <h2>YoKo Language Center</h2>
+        <h2>Yán Language Center</h2>
     </header>
     <fieldset>
         <legend><h3>Registration Form</h3></legend>
         <form id="container">
-
                 <section id="item" class="box">
-
                     <label for="fname" >First Name</label>
-
-                    <input type="text" placeholder="  First name" title="Please fill in your first name"  required>
+                    <input type="text" placeholder=" &#xf007;  First name" title="Please fill in your first name"  class="fontawesome" required>
                     <aside id="icon"></aside>
-                </section>
-            
+                </section>            
                 <section id="item">
                     <label for="lname" >Last Name</label>
-                    <input type="text" placeholder="  Last name" title="Please fill in your last name"  required>
+                    <input type="text" placeholder=" &#xf007;  Last name" title="Please fill in your last name" class="fontawesome" required>
                     <aside></aside>
-
                 </section> 
-
                 <section id="item">
                     <label for="bday">Date of Birth</label>
-                    <input type="date" min="1900-01-01" value="Date of Birth" required>
+                    <input type="date" min="1900-01-01" value="Date of Birth" title="Please fill in your date of birth" required>
                     <aside></aside>
-
-                </section>
-                   
+                </section>                   
                 <section id="item">
                     <label for="edate">Enrolled Date</label>
-                    <input type="date" id="edate" required>
+                    <input type="date" id="edate" title="Please fill in your enrolled date" required>
                     <aside></aside>
-
-
                 </section>
                 <section id="address">
                     <label for="address1" >Address Line 1</label>
-                    <input type="text" placeholder="  Address : Apartment Number, Street Number" title="Please fill in your apartment number"required >
+                    <input type="text" placeholder=" &#xf2bb;  Address : Apartment Number, Street Number" title="Please fill in your apartment number" class="fontawesome" required >
                     <aside></aside>
-
                 </section>
-
                 <section id="address">
                     <label for="address2" >Address Line 2</label>
-                    <input type="text" placeholder="  Address : Surburb" title="Please fill in the surburb" required>
+                    <input type="text" placeholder=" &#xf2bb;  Address : Surburb" title="Please fill in the surburb" class="fontawesome" required>
                     <aside></aside>
-
                 </section> 
-
                 <section id="item">
                     <label for="pcode" >Postal Code</label>
-                    <input type="text" placeholder="  Postal code" title="Please fill in the postal code" required>
+                    <input type="text" placeholder=" &#xf2bb;  Postal code" title="Please fill in the postal code" class="fontawesome" required>
                     <aside></aside>
-
                 </section>
-
                 <section id="item">
                     <label for="city" >City</label>
-                    <input type="text" placeholder="  City" title="Please fill in the city" required>
+                    <input type="text" placeholder=" &#xf2bb; City" title="Please fill in the city" class="fontawesome" required>
                     <aside></aside>
-
                 </section>
-
                 <section id="item">
                     <label for="state" >State / Province or Region</label>
-                    <input type="text" placeholder="  State / Province / Region" title="Please fill in the state" required>
+                    <input type="text" placeholder=" &#xf2bb; State / Province / Region" title="Please fill in the state" class="fontawesome" required>
                     <aside></aside>
-
-                </section>
-            
+                </section>            
                 <section id="item">
                     <label for="country" >Country</label>
                     <select name="country" >
@@ -92,59 +72,47 @@
                             <option value="Spain">Spain</option>
                     </select>
                     <aside></aside>
-
                 </section>
-
                 <section id="item">
                     <label for="phone">Phone Number: </label>
-                    <input type="tel" placeholder="  Phone Number" title="Please input your Australian mobile number."  pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+                    <input type="tel" placeholder=" &#xf095;  Phone Number" title="Please input your Australian mobile number."  class="fontawesome" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
                     <aside></aside>
-
                 </section>
-
                 <section id="item">
                     <label for="email">Email: </label>
-                    <input type="email" placeholder="  Email Address" title="Please enter a valid email address "  pattern="" required>
+                    <input type="email" placeholder=" &#xf0e0;  Email Address" title="Please enter a valid email address "  class="fontawesome" pattern="" required>
                     <aside></aside>
-
                 </section> 
-
                <section id="item">
                     <label for="username" class="grid">Username: </label>
-                    <input type="text" placeholder="  Username" title="Username contains 6-12 lowercase letters."  maxlength="12" required>
+                    <input type="text" placeholder="  &#xf007;  Username" title="Username contains 6-12 lowercase letters."  class="fontawesome" maxlength="12" required>
                     <aside></aside>
-
                 </section>
-
                 <section id="item">
                     <label for="pwd" id="pwd">Password: </label>
-                    <input type="password" placeholder="  Password" title="Password contains 8-20 characters, at least one uppercase letter, at least one number"  maxlength="20" pattern="" required>
+                    <input type="password" placeholder="  &#xf023;  Password" title="Password contains 8-20 characters, at least one uppercase letter, at least one number"  class="fontawesome" maxlength="20" pattern="" required>
                     <aside></aside>
-
                 </section>
-
                 <section id="item">
                     <label for="pwd" id="confirmpwd" >Confirm Password: </label>
-                    <input type="password" placeholder="  Confirm your password"   title="Please make sure the two passowrds match." pattern="" required>
-                    <aside></aside>
-    
+                    <input type="password" placeholder="  &#xf023;  Confirm your password"   title="Please make sure the two passowrds match." class="fontawesome" pattern="" required>
+                    <aside></aside>    
                 </section>
-
                 <section id="item17">
                     <input type="checkbox" id="checkbox" required>
                     <p> Check here to indicate that you have read and agree to the term of <a href="#">Terms of Services</a> and <a href="#">Privacy of Policy</a>.</p>
                     <aside></aside>
-
                 </section>
-
                 <section id="item14">
                     <input type="button" value="Create Account and Continue" id="item15" disabled>
                     <a href="#" id="item16">Need Help?</a>
+                    <span id="help"></span>
                 </section>
             </form>
         </fieldset>
-    <footer>
-        2018 copyright
+    <footer id="footer">
+        <a href="#">Copyright and Disclaimer</a>
+        <a href="#">Contact Us</a>
     </footer>
    
 </body>

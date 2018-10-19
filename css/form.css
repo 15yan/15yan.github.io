@@ -6,9 +6,7 @@
 body{
     background: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
-
 
 header{
     width:100%;
@@ -25,14 +23,14 @@ header{
 header h2{
     color:whitesmoke;
     padding-top:.8em;
-    font-size: 1.2em;
-    
+    font-size: 1.2em;    
 }
 
 #logo {
     width:3.5em;
     height:3.5em;
 }
+
 #container{
     display: grid;  
     grid-gap: .5em;   
@@ -62,15 +60,11 @@ input{
     width:21em;
     height:2em;
     margin:.5em;
-
 }
-
 
 label{
     display:none;
 }
-
-
 
 input::placeholder::after {
     background-image: url('images/creditcard.png');
@@ -89,7 +83,7 @@ input:focus::placeholder{
 }
 
 input:invalid+aside:before {
-    content: '!';
+    content: '*';
     color:red;
     font-weight: bold;
 }
@@ -100,34 +94,28 @@ input:valid+aside:after {
     font-weight: bold;
 }
 
-
-
-input::after{
-   content:'!';
-    background:blue;
-    /*background-image: url('images/ex.png');
-    background-position: right;
-    background-repeat: no-repeat;*/
+.fontawesome{
+    font-family:fontawesome;
 }
-
-
 
 fieldset{
     background: rgb(228, 230, 230);
     margin:0 auto;
     border-radius: .1em;
     border:rgb(228, 230, 230) dotted 1px;
-
+    margin-top: .5em;
 }
 
 legend{
+    border:1px dotted rgb(185, 185, 185);
+    background: rgb(228, 230, 230);
+    background-image: linear-gradient(to top, rgb(219, 217, 217) 0%, rgb(253, 251, 251) 51%, rgb(214, 213, 213) 100%);
     border-radius: .2em;
     padding:0 1em;
     color:#0073B1;
     font-size: 1em;
+    display:none;
 }
-
-
 
 #item select{
     margin:.5em ;
@@ -142,16 +130,32 @@ legend{
     height:2.5em;
     border:1px solid #0073B1;
     background-image: linear-gradient(to top, #0073B1 0%, rgb(15, 137, 202) 51%, #0073B1 100%);
-
 }
 
 #item15:hover{
     background:rgb(1, 95, 146);
     cursor: pointer;
 }
+
+#item15:disabled{
+    background:grey;
+    border:1px solid grey;    
+}
+
+#item15:enabled{
+    background:#0073B1;
+    color:white;
+    font-size: 1em;
+    width:18em;
+    height:2.5em;
+    border:1px solid #0073B1;
+    background-image: linear-gradient(to top, #0073B1 0%, rgb(15, 137, 202) 51%, #0073B1 100%);
+}
+
 #item16{
     color:#0073B1;
     padding:.7em;
+    position: relative;
 }
 
 #item16:hover{
@@ -187,17 +191,27 @@ legend{
     font-weight: bold;
 }
 
+#help{
+    border:1px solid black;
+    width:3em;
+    height:3em;
+    position: absolute;
+    display: none;
+}
+
 footer{
     margin:0 auto;
     height:3em;
-    background:#0073B1;
+    background:#0073B1;    
 }
 
+#footer a{
+    color:whitesmoke;
+    margin:1em;
+    text-decoration: none;
+}
 
-@media screen and (min-width: 25em){
- 
-   
-   
+@media screen and (min-width: 25em){   
     #container {
         display: grid;  
         grid-gap: .4em;   
@@ -205,6 +219,7 @@ footer{
         grid-template-rows: auto ; 
         margin:0 auto;
     }
+
     header{
         width:30em;
         margin:0 auto;
@@ -213,22 +228,17 @@ footer{
     header h2{
         color:whitesmoke;
         padding-top:.5em;
-        font-size: 1.5em;
-        
+        font-size: 1.5em;        
     }
+
     fieldset{
         margin:0 auto;
         background: rgb(228, 230, 230);
         border:rgb(228, 230, 230) dotted 1px;
         width:30em;
         height:auto;
-        
+        margin-top: .5em;        
     }
-/*
-    legend{
-        /*background:rgb(228, 230, 230);
-        border:1px  solid rgb(228, 230, 230);
-    }*/
 
     input{
         border:1px rgb(252, 252, 255) solid;
@@ -316,31 +326,15 @@ footer{
     #item16{
         grid-column:2;
         grid-row:1;
-
-    }
-
-    #item15:disabled{
-        background:grey;
-        border:1px solid grey;
-        
-    }
-
-    #item15:enabled{
-        background:#0073B1;
-        color:white;
-        font-size: 1em;
-        width:18em;
-        height:2.5em;
-        border:1px solid #0073B1;
-        background-image: linear-gradient(to top, #0073B1 0%, rgb(15, 137, 202) 51%, #0073B1 100%);
-    }
+    }   
    
-footer{
-    margin:0 auto;
-    height:3em;
-    width:30em;
-    
-}
-
-    
+    #footer{
+        margin:0 auto;
+        height:3em;
+        width:30em;
+        display:grid;
+        grid-gap:1em;
+        grid-template-columns: 50fr 50fr;
+        grid-template-rows: auto;
+    }    
 }
