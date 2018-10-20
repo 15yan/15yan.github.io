@@ -68,4 +68,18 @@ function bleave(){
     }
 }
 
+document.getElementById('edate').addEventListener('mouseover',tooltip2);
+function tooltip2(){
+    if(document.getElementById('edate').mouseover=true){
+        document.getElementById('tooltip2').style.display='block';
+    }
+}
+
+document.getElementById('edate').addEventListener('mouseleave',eleave);
+function eleave(){
+    if(document.getElementById('edate').mouseleave=true){
+        document.getElementById('tooltip2').style.display='none';
+    }
+}
+
 

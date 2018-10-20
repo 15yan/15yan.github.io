@@ -115,12 +115,27 @@ legend{
     height:3em;
     color:white;
     background:grey;
+    border-radius: .3em;
     position: absolute;
     display: none;
 }
 
-#date{
+#bday{
+    position: relative;
+}
+
+#edate{
+    position: relative;
+}
+
+#tooltip2{
+    width:10em;
+    height:3em;
+    color:white;
+    background:grey;
+    border-radius: .3em;
     position: absolute;
+    display: none;
 }
 
 #item select{
