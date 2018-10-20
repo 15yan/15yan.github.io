@@ -110,6 +110,19 @@ legend{
     display:none;
 }
 
+#tooltip{
+    width:10em;
+    height:3em;
+    color:white;
+    background:grey;
+    position: absolute;
+    display: none;
+}
+
+#date{
+    position: absolute;
+}
+
 #item select{
     margin:.5em ;
     width:10em;
@@ -146,7 +159,7 @@ legend{
 }
 
 #popup{
-    width:20em;
+    width:18em;
     height:4em;
     position: absolute;
     background:#0073B1;
@@ -184,6 +197,7 @@ legend{
     height:6em;
     display: none;
     position: absolute;
+    background:white;
 }
 
 #item16:hover{

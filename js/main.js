@@ -1,11 +1,11 @@
 
 document.getElementById('checkbox').addEventListener('click',agreeTerm);
 function agreeTerm(){
-    if(document.getElementById('checkbox').clicked=true){
+    if(document.getElementById('checkbox').checked=true){
         document.getElementById('item15').disabled=false; 
     }
 
-    else if(Number(localStorage.clickcount)%2==0){
+    else {
         document.getElementById('item15').disabled=true;
     }
    
@@ -53,3 +53,19 @@ function leave(){
         document.getElementById('video').style.display='none';
     }
 }
+
+document.getElementById('bday').addEventListener('mouseover',tooltip);
+function tooltip(){
+    if(document.getElementById('bday').mouseover=true){
+        document.getElementById('tooltip').style.display='block';
+    }
+}
+
+document.getElementById('bday').addEventListener('mouseleave',bleave);
+function bleave(){
+    if(document.getElementById('bday').mouseleave=true){
+        document.getElementById('tooltip').style.display='none';
+    }
+}
+
+
