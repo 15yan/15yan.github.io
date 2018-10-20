@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo9.svg" id="logo">
+        <img src="images/logo9.svg" id="logo" alt="logo">
         <h2>Yán Language Center</h2>
     </header>
     <fieldset>
@@ -89,14 +89,19 @@
                     <aside></aside>
                 </section>
                 <section id="item">
-                    <label for="pwd" id="pwd">Password: </label>
-                    <input type="password" placeholder="  &#xf023;  Password" title="Password contains 8-20 characters, at least one uppercase letter, at least one number"  class="fontawesome" maxlength="20" pattern="" required>
+                    <label for="pwd" >Password: </label>
+                    <input type="password" id="pwd" placeholder="  &#xf023;  Password (6 or more characters)" title="Password contains 8-20 characters, at least one uppercase letter, at least one number"  class="fontawesome" maxlength="20" pattern="" required>
                     <aside></aside>
                 </section>
                 <section id="item">
-                    <label for="pwd" id="confirmpwd" >Confirm Password: </label>
-                    <input type="password" placeholder="  &#xf023;  Confirm your password"   title="Please make sure the two passowrds match." class="fontawesome" pattern="" required>
+                    <label for="pwd"  >Confirm Password: </label>
+                    <input type="password" id="confirmpwd" placeholder="  &#xf023;  Confirm your password"   title="Please make sure the two passowrds match." class="fontawesome" pattern="" required>
                     <aside></aside>    
+                    <div id='popup'>
+                            <div id='close'>&#10006;</div>
+                            <p>Error:Please confirm your password.</p>
+
+                        </div>
                 </section>
                 <section id="item17">
                     <input type="checkbox" id="checkbox" required>
@@ -105,8 +110,13 @@
                 </section>
                 <section id="item14">
                     <input type="button" value="Create Account and Continue" id="item15" disabled>
-                    <a href="#" id="item16">Need Help?</a>
-                    <span id="help"></span>
+                    
+                    <a href="#" id="item16">Need Help?
+                        <video controls id='video'>
+                            <source src='movie.pm4' type='video/mp4'>
+                            <source src='movie.ogg' type='video/ogg'>
+                        </video>
+                    </a>
                 </section>
             </form>
         </fieldset>

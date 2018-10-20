@@ -66,13 +66,6 @@ label{
     display:none;
 }
 
-input::placeholder::after {
-    background-image: url('images/creditcard.png');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 6%;
-}
-
 input:required:focus{
     border:rgb(114, 141, 155) 2px solid;
     box-shadow: rgb(201, 205, 207) 2px 4px 3px;
@@ -152,10 +145,45 @@ legend{
     background-image: linear-gradient(to top, #0073B1 0%, rgb(15, 137, 202) 51%, #0073B1 100%);
 }
 
+#popup{
+    width:20em;
+    height:4em;
+    position: absolute;
+    background:#0073B1;
+    display:none;
+    border-radius: .3em;
+
+}
+
+#popup p{
+    color:whitesmoke;
+    padding:.5em 0 0 1em;
+}
+
+#close{
+    position: absolute;
+    color:whitesmoke;
+    cursor: pointer;
+}
+
+#close p{
+    color:whitesmoke;
+
+}
+
 #item16{
     color:#0073B1;
     padding:.7em;
     position: relative;
+    cursor: pointer;
+
+}
+
+#video{
+    width:8em;
+    height:6em;
+    display: none;
+    position: absolute;
 }
 
 #item16:hover{
